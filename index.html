@@ -2,17 +2,43 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Mail and Dices</title>
+    <title>Mails and Dices</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/style.css">
   </head>
   <body>
 
-    <div class="container">
-      <div class="row">
-        
+    <div class="container-fluid gp-bg">
+      <div class="container">
+        <div class="row text-center py-3 text-white">
+          <div class="col">
+            <h1>DICE GAME</h1>
+            <h2>Puoi vincere fino ad UN MILIARDO!!!</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <h2 id="validmessage" class="text-center text-white py-3"></h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <h3 id="dicewinner" class="text-white text-center"></h3>
+          </div>
+        </div>
+        <div id="dice-row" class="row py-5">
+          <div class="col-6 text-white text-center">
+            <h5>Il tuo dado</h5>
+            <p id="user-dice" class="text-danger fw-bold"></p>
+          </div>
+          <div class="col-6 text-white text-center">
+            <h5>Il dado del PC</h5>
+            <p id="pc-dice" class="text-danger fw-bold"></p>
+          </div>
+        </div>
       </div>
     </div>
+
     <script src="assets/script.js" charset="utf-8"></script>
   </body>
 </html>
